@@ -31,7 +31,7 @@ class App extends React.Component {
     }
     // this is done so that the value of 'this'
     // would be accessible within toggleSpin method
-    //this.toggleSpin = this.toggleSpin.bind(this);
+    this.toggleSpin = this.toggleSpin.bind(this);
   }
 
   componentDidMount(){
@@ -61,11 +61,12 @@ class App extends React.Component {
         <Navbar />
         <header className="App-header">
 
-          <img src={logo} 
-          className={this.state.spinLogo ? "App-logo" : "Animated tada"}
-          alt="logo" 
-          onMouseEnter={this.toggleSpin}
-          onMouseLeave={this.toggleSpin}
+          <img 
+          src={logo} 
+            className={this.state.spinLogo ? "App-logo-static" : "App-logo-static animated rubberBand"}
+            alt="logo" 
+            onMouseEnter={this.toggleSpin}
+            onMouseLeave={this.toggleSpin}
           />
           {
             this.state.loading ? <Loader /> : 

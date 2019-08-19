@@ -1,8 +1,7 @@
 html, body {
   text-align: center;
-  background: url('./background.jpg') no-repeat center;
+  background: url('./background.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
   color: whitesmoke;
 }
 .App {
@@ -10,17 +9,24 @@ html, body {
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 2s linear;
   height: 80px;
   
 }
 
-.App-logo-stattic {
+.App-logo-static {
   height: 80px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.car-list {
+  margin: 5%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
 }
 
 @keyframes App-logo-spin {

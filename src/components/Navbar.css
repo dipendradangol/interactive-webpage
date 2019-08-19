@@ -1,0 +1,18 @@
+.nav-content{
+    background: black;
+    width: 300px;
+    float: left;
+    position: fixed;
+    height: 100%;
+    line-height: 70px;
+    padding-top: 50px;
+    display: none;
+}
+.nav-content>div{
+    cursor: pointer;
+}
+.nav-content>div:hover{
+    transition: 0.2s;
+    color: grey;
+    background: white;
+}

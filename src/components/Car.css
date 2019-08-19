@@ -1,0 +1,19 @@
+.car {
+    width: 30%;
+    background: white;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.car-image {
+    width: 100%;
+}
+
+.horse-power {
+    color: red;
+    font-size: 30px;
+}

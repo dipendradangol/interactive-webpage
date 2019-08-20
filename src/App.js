@@ -6,6 +6,7 @@ import Car from './components/Car';
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Info from './components/Info';
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 

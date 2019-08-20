@@ -5,6 +5,8 @@ import './animate.css';
 import Car from './components/Car';
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
+import Home from './components/Home';
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 
 class App extends React.Component {
@@ -57,30 +59,48 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <Navbar />
-        <header className="App-header">
+      <Router>
+        <div className="App">
+          <Navbar />
+          <header className="App-header">
 
-          <img 
-          src={logo} 
-            className={this.state.spinLogo ? "App-logo-static" : "App-logo-static animated rubberBand"}
-            alt="logo" 
-            onMouseEnter={this.toggleSpin}
-            onMouseLeave={this.toggleSpin}
-          />
-          {
-            this.state.loading ? <Loader /> : 
-            <div className="car-list">
-              {
-                this.state.cars.map(car => (
-                  <Car key ={car.id}></Car>
-                ))
-              }
-            </div>
-          }
-        
-        </header>
-      </div>
+            <img 
+            src={logo} 
+              className={this.state.spinLogo ? "App-logo-static" : "App-logo-static animated rubberBand"}
+              alt="logo" 
+              onMouseEnter={this.toggleSpin}
+              onMouseLeave={this.toggleSpin}
+              onClick={this.showNavigator}
+            />
+            <Switch>
+              <Route exact path="/" component={Home}></Route>
+
+              <Route exact path="/loader" component={Loader}></Route>
+
+              <Route
+                exact 
+                path="/carlist"
+                render={props =>
+                  this.state.loading ?  <Loader />  : (
+                  <div className="car-list">
+                    {
+                      this.state.cars.map(car => (
+                        <Car key ={car.id}></Car>
+                      ))
+                    }
+                  </div>
+                  )
+                }
+              >
+              </Route>
+            </Switch>
+            {
+              
+            }
+          
+          </header>
+        </div>
+      </Router>
     );
   }
 }

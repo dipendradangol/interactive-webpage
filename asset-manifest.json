@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/interactive-webpage/static/css/main.af79bdff.chunk.css",
+    "main.js": "/interactive-webpage/static/js/main.46f85789.chunk.js",
+    "main.js.map": "/interactive-webpage/static/js/main.46f85789.chunk.js.map",
+    "runtime~main.js": "/interactive-webpage/static/js/runtime~main.bae76512.js",
+    "runtime~main.js.map": "/interactive-webpage/static/js/runtime~main.bae76512.js.map",
+    "static/js/2.7cb610b5.chunk.js": "/interactive-webpage/static/js/2.7cb610b5.chunk.js",
+    "static/js/2.7cb610b5.chunk.js.map": "/interactive-webpage/static/js/2.7cb610b5.chunk.js.map",
+    "index.html": "/interactive-webpage/index.html",
+    "precache-manifest.b2317d7807dc5ddc30048fc676c7550e.js": "/interactive-webpage/precache-manifest.b2317d7807dc5ddc30048fc676c7550e.js",
+    "service-worker.js": "/interactive-webpage/service-worker.js",
+    "static/css/main.af79bdff.chunk.css.map": "/interactive-webpage/static/css/main.af79bdff.chunk.css.map",
+    "static/media/App.css": "/interactive-webpage/static/media/background.e22127ec.jpg",
+    "static/media/car.jpg": "/interactive-webpage/static/media/car.f58239f1.jpg",
+    "static/media/logo.png": "/interactive-webpage/static/media/logo.47e1f318.png"
+  }
+}
